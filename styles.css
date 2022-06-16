@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+img {
+    height: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#caixa-numeros {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.numeros {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
