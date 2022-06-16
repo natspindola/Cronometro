@@ -31,3 +31,17 @@ img {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+#caixa-botoes {
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botoes {
+    color: #C5FB01;
+    padding: 10px;
+    border-color: #C5FB01;
+    background: black;
+    cursor: pointer;
+}
