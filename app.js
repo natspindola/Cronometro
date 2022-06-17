@@ -6,17 +6,23 @@ let minutos = document.getElementById("minutos")
 let horas = document.getElementById("horas")
 
 let startTimer
-let ms = "00"
-let seg = "00"
-let min = "00"
-let hr = "00"
+let ms = 0
+let seg = 0
+let min = 0
+let hr = 0
 
 function start()
 {
     startTimer = setInterval(function () {
         ms = ms + 1
         console.log("ms")
+        atualizaValor()
     }, 10);
+}
+
+function atualizaValor()
+{
+    mili.innerHTML = ms
 }
 
 btnStart.addEventListener("click", start)
