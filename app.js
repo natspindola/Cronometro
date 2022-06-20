@@ -14,8 +14,23 @@ let hr = 0
 function start()
 {
     startTimer = setInterval(function () {
-        ms = ms + 1
-        console.log("ms")
+        ms++
+
+        if(ms == 100){
+            seg++
+            ms = 0
+        }
+       
+        if(seg == 60){
+            min++
+            seg = 0
+        }
+
+        if(min == 60){
+            hr++
+            min = 0
+        }
+
         atualizaValor()
     }, 10);
 }
@@ -23,6 +38,9 @@ function start()
 function atualizaValor()
 {
     mili.innerHTML = ms
+    segundos.innerHTML = seg
+    minutos.innerHTML = min
+    horas.innerHTML = hr
 }
 
 btnStart.addEventListener("click", start)
