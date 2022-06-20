@@ -8,8 +8,8 @@ let horas = document.getElementById("horas")
 let startTimer
 let ms = 0
 let seg = "00"
-let min = 0
-let hr = 0
+let min = "00"
+let hr = "00"
 
 function start()
 {
@@ -28,11 +28,21 @@ function start()
        
         if(seg == 60){
             min++
+
+            if(min < 10){
+                min = "0" + min
+            }
+
             seg = 0
         }
 
         if(min == 60){
             hr++
+
+            if(hr < 10){
+                hr = "0" + hr
+            }
+
             min = 0
         }
 
