@@ -1,5 +1,6 @@
 let btnStart = document.getElementById("start")
 let btnStop = document.getElementById("stop")
+let btnReset = document.getElementById("reset")
 
 let mili = document.getElementById("mili")
 let segundos = document.getElementById("segundos")
@@ -55,6 +56,15 @@ function stop(){
     clearInterval(startTimer)
 }
 
+function reset(){
+    clearInterval(startTimer)
+    ms = "00"
+    seg = "00"
+    min = "00"
+    hr = "00"
+    atualizaValor()
+}
+
 function atualizaValor()
 {
     mili.innerHTML = ms
@@ -65,3 +75,4 @@ function atualizaValor()
 
 btnStart.addEventListener("click", start)
 btnStop.addEventListener("click", stop)
+btnReset.addEventListener("click", reset)
