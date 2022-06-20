@@ -48,12 +48,19 @@ function start()
             min = 0
         }
 
+        btnStart.classList.add("ativo")
+        btnStop.classList.remove("ativo")
+        btnReset.classList.remove("ativo")
+
         atualizaValor()
     }, 10);
 }
 
 function stop(){
     clearInterval(startTimer)
+    btnStop.classList.add("ativo")
+    btnStart.classList.remove("ativo")
+    btnReset.classList.remove("ativo")
 }
 
 function reset(){
@@ -63,6 +70,9 @@ function reset(){
     min = "00"
     hr = "00"
     atualizaValor()
+    btnReset.classList.add("ativo")
+    btnStart.classList.remove("ativo")
+    btnStop.classList.remove("ativo")
 }
 
 function atualizaValor()

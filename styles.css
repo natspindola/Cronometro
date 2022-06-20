@@ -44,6 +44,7 @@ img {
     border-color: #C5FB01;
     background: black;
     cursor: pointer;
+    width: 85px;
 }
 
 #legenda{
@@ -52,4 +53,8 @@ img {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     margin-left: 485px;
+}
+
+.ativo{
+    opacity: 0.5;
 }
